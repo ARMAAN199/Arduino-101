@@ -1,0 +1,24 @@
+/*
+  Turns on and off a light emitting diode(LED) when pressing a pushbutton.
+  DIGITAL READ
+*/
+
+//Setting up constant PIN numbers
+const int PushbuttonPin = 2;
+const int ledPin =  13;
+
+int buttonState = 0;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);
+  pinMode(PushbuttonPin, INPUT);
+}
+
+void loop() {
+  buttonState = digitalRead(buttonPin);
+  if (buttonState == HIGH) {
+    digitalWrite(ledPin, HIGH);  //LED IS NOW ON
+  } else {
+    digitalWrite(ledPin, LOW);  //LED IS NOW OFF
+  }
+}
