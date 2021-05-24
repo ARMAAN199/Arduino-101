@@ -1,0 +1,23 @@
+int led=13,led2=8,led3=2;
+void setup()
+{
+  pinMode(led, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(led, HIGH);
+  delay(100); // Wait for 1000 millisecond(s)
+  digitalWrite(led, LOW);
+  delay(100); // Wait for 1000 millisecond(s)
+  digitalWrite(led2, HIGH);
+  delay(100); // Wait for 1000 millisecond(s)
+  digitalWrite(led2, LOW);
+  delay(100); // Wait for 1000 millisecond(s)
+  digitalWrite(led3, HIGH);
+  delay(100); // Wait for 1000 millisecond(s)
+  digitalWrite(led3, LOW);
+  delay(100); // Wait for 1000 millisecond(s)
+}
